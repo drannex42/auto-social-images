@@ -39,10 +39,10 @@ That's it.
 
 Check out the generate_pages.njk file, and ensure that your variables align with your system. Everyone has a different style, it's rather simple to add and remove. 
 
-## Things I would/change if I had spent more time
+## Things I would change
 
-- Probably use Svelte for quickly adding and removing page params and objects, but probably overkill.
-- Use a more standard way of encoding params, just already made an encoding filter for another utility. 
+- Likely use Svelte for quickly adding and removing page params and objects, but probably overkill.
+- Use a more standard way of encoding params, just already had an encoding filter for another utility. 
 - Make this a bit cleaner, a default theme for most people. 
 
 ## Credit
