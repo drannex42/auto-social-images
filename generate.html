@@ -1,0 +1,59 @@
+---
+permalink: "generate.html"
+layout: null
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Social sharing image generator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            width: 600px;
+            height: 315px;
+            position: relative;
+            background-size: cover !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background" id="bg">
+        <div id="image"></div>
+        <div id="title"></div>
+        <div id="author"></div>
+        <div id="url"></div>
+    </div>
+    </div>
+
+    <script>
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+        let title = urlParams.get("title") || "Example"
+        const image = urlParams.get("image");
+        const author = urlParams.get("author");
+        const url = urlParams.get("url");
+
+        const slot = document.getElementById("title")
+        const slot_image = document.getElementById("bg")
+        const slot_author = document.getElementById("author")
+        const slot_url = document.getElementById("url");
+
+
+        slot.innerHTML = title;
+        slot_url.innerHTML = url;
+        slot_image.style.background =  "url(" + image + ")";
+</script>
+
+</body>
+
+</html>

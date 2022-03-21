@@ -1,0 +1,17 @@
+---
+permalink: "generate_pages.json"
+eleventyExcludeFromCollections: true
+layout: clear
+---
+[
+{%- for post in collections.all %}
+    {
+        "title":"{{ post.data.title | encodeString}}",
+        "slug":"{{ post.url | slug }}",
+        "image":"{{ post.data.img }}",
+        "author":"{{post.data.author}}",
+        "url":"{{post.url | encodeString}}"
+    }
+    {% if loop.last == false %},{% endif %}
+{% endfor %}
+] 
