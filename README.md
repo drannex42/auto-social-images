@@ -1,4 +1,4 @@
-![](/autogen.jpg)
+![](/blogautogen.jpg)
 
 # Auto Generate Social Images
 
