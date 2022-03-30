@@ -30,7 +30,7 @@ This was primarily built with Eleventy/11ty in mind, but is made in such a way i
 
 ### Open Graph 
 
-The image files are saves as a slug version of your post (page) url, this will turn `/tech/autogen` into `techautogen, any time you need to share this image or display it, call `{{page.url | slug }}.jpg` in your generated assets folder (templating is nunjucks, make the approriate changes for your templating language). 
+The image files are saves as a slug version of your post (page) url, this will turn `/tech/autogen` into `techautogen` and any time you need to share this image or display it, call `{{page.url | slug }}.jpg` in your generated assets folder (templating is nunjucks, make the approriate changes for your templating language). 
 
 ```
 <meta property="og:url" content="https://your-url-here.com{{ page.url }}" />
