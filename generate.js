@@ -59,7 +59,7 @@ async function main() {
         });
 
     } else if (bot == "n") {
-        console.log("[Failure] :: Please restart the process to retry.
+        console.log("[Failure] :: Please restart the process to retry.")
     }
 
 }
