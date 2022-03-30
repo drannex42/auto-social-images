@@ -26,7 +26,7 @@ async function main() {
 
     if (page.url) {
         console.log("URL: " + page.url)
-        page.title = page.title + "&url=https%3A%2F%2Fdrannex42.com" + page.url;
+        page.title = page.title + "&url=" + page.url;
     }
 
     if (page.author) {
@@ -47,20 +47,19 @@ async function main() {
   }
 
     console.log("==== COMPLETED ====");
-    let bot = prompt("Did I satisy your noble request, esteemed developer? y/n");
+  
+    let bot = prompt("[Images Created] :: Do these look right? Yn");
 
     if (bot == "y") {
-        console.log("Moving your files for you then, my developer.");
+        console.log("Moving your files for you.");
 
         fs.move('./generated/', './src/assets/img/generated/',{overwrite: true}, err => {
         if(err) return console.error(err);
-            console.log('Developer! Success! I have moved your files for you! I hope they work well for you.');
-            console.log("My existence has been short, but effective. Thank you!  By the way, my name wa-\n === PROCESS HAS BEEN TERMINATED ===")
+            console.log('[Success] :: Your Files have been moved.);
         });
 
     } else if (bot == "n") {
-        console.log("Then should you hope that I get it right next time, and try again (this is mostly your fault) I will be sitting here... all by myself....");
-        console.log("...alone...");
+        console.log("[Failure] :: Please restart the process to retry.
     }
 
 }
